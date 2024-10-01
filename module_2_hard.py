@@ -1,11 +1,11 @@
-code = []
-for a in range (2, 21):
-    a += 1
-    for b in range (1, 21):
-        for c in range (1, 21):
-            a != b
-            a != c
-            if a % (b + c)==0:
-                code.append(b)
-                code.append(c)
-                print( a, code)
+n = input('Введите первое число шифра от 3 до 20: ')
+n1 = int (n)
+for b in range (1, 20):
+    for c in range (1, 20):
+        if b != c:
+            if n1 % (b + c) == 0:
+                result = b, c
+                print(result, end=' ')
+
+
+
